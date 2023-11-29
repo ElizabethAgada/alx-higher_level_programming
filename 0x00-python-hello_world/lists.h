@@ -24,7 +24,6 @@ int check_cycle(listint_t *list)
 
         return (0);
 }
-root@e024474929d2:~/alx-higher_level_programming/0x00-python-hello_world# cat lists.h
 #ifndef LISTS_H
 #define LISTS_H
 
