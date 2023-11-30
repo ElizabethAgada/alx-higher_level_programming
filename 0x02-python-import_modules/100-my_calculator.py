@@ -17,4 +17,3 @@ if sys.argv[2] not in list(ops.keys()):
     a = int(sys.argv[1])
     b = int(sys.arg[3])
     print("{} {} {} = {}".format(a, sys.argv[2], b, ops[sys.argv[2]](a, b)))
-
