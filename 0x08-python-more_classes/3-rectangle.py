@@ -1,4 +1,4 @@
-#!/usr/bin/ptyhon3
+#!/usr/bin/python3
 """Defines a Rectangle class."""
 
 
@@ -54,14 +54,14 @@ class Rectangle:
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
-        Represents the rectangle with the  # character.
+        Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
 
         rect = []
-        for q in range(self.__height):
-            [rect.append('#') for p in range(self.__width)]
-            if q != self.__height - 1:
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
