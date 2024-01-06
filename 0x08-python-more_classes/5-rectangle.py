@@ -25,7 +25,7 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError('width must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -54,24 +54,24 @@ class Rectangle:
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
-        Represents the rectangle with the  # character.
+        Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
 
         rect = []
-        for p in range(self.__height):
-            [rect.append('#') for q in range(self.__width)]
-            if p != self.__height - 1:
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
 
-        def __repr__(self):
-            """Return the string representation of the Rectangle."""
-            rect = "Rectangle(" + str(self.__width)
-            rect += ", " + str(self.__height) + ")"
-            return (rect)
+    def __repr__(self):
+        """Return the string representation of the Rectangle."""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
 
-        def __del__(self):
-            """Print a message for every deletion of a Rectangle."""
-            print("Bye rectangle...")
+    def __del__(self):
+        """Print a message for every deletion of a Rectangle."""
+        print("Bye rectangle...")
