@@ -6,8 +6,8 @@ def is_kind_of_class(obj, a_class):
     """Checks if an object is an instance, or inherited instance of a class.
 
     Args:
-        obj (any): oBJECT TO BE CHECKED.
-        a_class (type): Class to match type of obj to.
+        obj (any): object to check.
+        a_class (type): class to match type of obj to.
     Returns:
         True - if obj is an instance or inherited instance of a-class.
         otherwise - False.
