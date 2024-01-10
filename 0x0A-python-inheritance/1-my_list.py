@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-contains the Mylist class
+contains the MyList class
 """
 
 
-class Mylist(list):
+class MyList(list):
     """a subclass of list"""
     def __init__(self):
         """initializes the object"""
