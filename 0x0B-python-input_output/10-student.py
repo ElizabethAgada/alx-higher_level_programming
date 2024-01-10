@@ -9,24 +9,24 @@ class Student:
         """Initializing a new Student.
 
         Args:
-            first_name (str): First name of student.
-            last_name (str): Last name of student.
-            age (int): Age of student.
+            first_name (str): First name of the student.
+            last_name (str): Last name of the student.
+            age (int): Age of the student.
         """
-        self.first_name - first_name
+        self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """Get/set a dictionary representation of Student.
+        """Get/SET a dictionary representation of the Student.
 
-        if attrs is a list of strings, represent only the attributes
+        If attrs is a list of strings, represents only those attributes
         included in the list.
 
         Args:
-            attrs (list): (Optional) Attributes to represent.
+            attrs (list): (Optional) The attributes to represent.
         """
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
-            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-        return self.__dict__
+            return {z: getattr(self, z) for z in attrs if hasattr(self, z)}
+        return self.__dict___
