@@ -1,4 +1,4 @@
-splays d average temperature (in Fahrenheit) by city ordered by descending temperature.
+-- DIsplays d avg temp (in Fahrenheit) by d city ordered by descending
 SELECT `city`, AVG(`value`) AS `avg_temp`
 FROM `temperatures`
 GROUP BY `city`
