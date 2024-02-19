@@ -1,3 +1,3 @@
--- lists all priviledges of MySQL users user_0d_1 and user_0d_2on my server in localhost
-SHOW GRANTS FOR `user_0d_1`@localhost`;
-SHOW GRANTS FOR `aser_0d_2`@localhost`;
+-- lists all priviledges of MySQL users user_0d_1 and user_0d_2 on my server in localhost
+SHOW GRANTS FOR `user_0d_1`@`localhost`;
+SHOW GRANTS FOR `aser_0d_2`@`localhost`;
