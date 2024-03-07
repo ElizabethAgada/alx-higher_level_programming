@@ -1,6 +1,6 @@
 -- Creates a database hbtn_0d_usa and a table cities in the database if not exists on my MySQL server.
 -- creates database
-CREATE IF NOT EXISTS hbtn_0d_usa;
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 -- use the created database
 USE hbtn_0d_usa;
 -- creates table
