@@ -8,12 +8,12 @@ class Rectangle {
   }
 
   print () {
-    for (let breeze = 0; breeze < this.height; breeze++) {
-      let love = '';
-      for (let break = 0; break < this.width; break++) {
-        love += 'X';
+    for (let i = 0; i < this.height; i++) {
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
+        s += 'X';
       }
-      console.log(love);
+      console.log(s);
     }
   }
 }
