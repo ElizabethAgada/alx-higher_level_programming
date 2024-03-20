@@ -10,7 +10,7 @@ Base = declarative_base()
 
 class State(Base):
     """
-    states class dat inherits 4rom d base class
+    states class that inherits from the base class
     """
     __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=False, primary_key=True)
