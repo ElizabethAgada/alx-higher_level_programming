@@ -12,7 +12,7 @@ if __name__ == "__main__":
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
-    Session = Session()
+    session = Session()
     new_instance = session.query(State).filter_by(id=2).first()
     new_instance.name = 'New Mexico'
     session.commit()
