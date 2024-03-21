@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Dis returns the state if, of d state passed to it"""
 
 
 import sys
