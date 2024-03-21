@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""this lists d first state in d database"""
 
 
 import sys
@@ -16,4 +17,4 @@ if __name__ == "__main__":
     instance = session.query(State).first()
     if instance is None:
         print("Nothing")
-    print(instance.id, instance.name, sep-": ")
+    print(instance.id, instance.name, sep=": ")
