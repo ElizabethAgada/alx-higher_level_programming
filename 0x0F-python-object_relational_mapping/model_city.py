@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""this state class dat inherits from base"""
+"""state class that inherits from base"""
 
 
 from sqlalchemy import Column, String, Integer, ForeignKey
@@ -10,7 +10,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 class City(Base):
     """
-    Dis states class dat inherits 4rm d base class
+    states class that inherits from the base class
     """
     __tablename__ = 'cities'
     id = Column(Integer, autoincrement=True, unique=True, nullable=False, primary_key=True)
