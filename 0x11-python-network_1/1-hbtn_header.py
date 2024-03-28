@@ -1,21 +1,15 @@
 #!/usr/bin/python3
-"""Script that lists 10 most recent commit on a particular GitHub repository
-Usage: ./100-github_commits.py <repository name> <repository owner>
+"""Script that displays X-Request-Id header
+variable of a request to a URL provided
+Usage: ./1-hbtn_header.py <URL>
 """
 import sys
-import requests
+import urllib.request
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/repos/{}/{}/commits".format(
-        sys.argv[2], sys.argv[1])
+    url = sys.argv[1]
 
-    r = requests.get(url)
-    commits = r.json()
-    try:
-        for i in range(10):
-            print("{}: {}".format(
-                commits[i].get("sha"),
-                commits[i].get("commit").get("author").get("name")))
-    except IndexError:
-        pass
+    request = urllib.request.Request(url)
+    with urllib.request.urlopen(request) as response:
+        print(dict(response.headers).get("X-Request-Id"))
