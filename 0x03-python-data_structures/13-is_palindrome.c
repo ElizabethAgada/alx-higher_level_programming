@@ -1,10 +1,9 @@
 #include "lists.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
  * reverse_listint - DE reverses a linked list
- * @head: DE pointer to the first node in the list
+ * @head: d pointer to the first node in the list
  *
  * Return: DE pointer to the first node in the new list
  */
